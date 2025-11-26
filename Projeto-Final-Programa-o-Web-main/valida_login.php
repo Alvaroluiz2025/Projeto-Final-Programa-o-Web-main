@@ -20,7 +20,6 @@ try {
         ':senha' => $senha
     ]);
 
-    echo "✅ Cadastro realizado com sucesso!";
 
 } catch (PDOException $e) {
     die("Erro ao Cadastrar: " . $e->getMessage());
@@ -46,5 +45,4 @@ pre { background:#f0f0f0; padding:10px; border-radius:5px; text-align:left; whit
 <div class="container">
     <h1>✅ Cadastro Realizado com Sucesso!</h1>
     <p>Obrigado por se cadastrar, <?php echo htmlspecialchars($nome); ?>!</p>
-    <p>Seu cadastro foi realizado com os seguintes detalhes:</p>
-    <pre></pre>
+  
